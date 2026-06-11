@@ -1043,10 +1043,6 @@ CPDFConversion.start_pdf_to_markdown("markdown.pdf", "password", "path/output.md
 
   Currently, OCR only works on x64 architecture.
 
-- Why are my conversion options different from the defaults?
-
-  `ConvertOptions` initializes with default values. Review the options and set them explicitly for your use case.
-
 ## 5.2 Contact Us
 
 Thanks for your interest in PDFSolid Conversion SDK, the easy-to-use and powerful development solution. If you encounter technical questions or bug issues when using PDFSolid Conversion SDK, please submit the problem report to the [PDFSolid team](mailto:support@pdfsolid.com). The following information will help us solve your problem:
@@ -1058,8 +1054,9 @@ Thanks for your interest in PDFSolid Conversion SDK, the easy-to-use and powerfu
 
 ### Contact Information
 
-- Home link: [https://www.pdfsolid.com](https://www.pdfsolid.com/)
-- Email: [support@pdfsolid.com](mailto:support@pdfsolid.com)
+- Website: [https://www.pdfsolid.com](https://www.pdfsolid.com/)
+- Sales: [sales@pdfsolid.com](mailto:sales@pdfsolid.com)
+- Support: [support@pdfsolid.com](mailto:support@pdfsolid.com)
 
 Thanks,
 
