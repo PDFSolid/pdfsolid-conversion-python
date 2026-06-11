@@ -1,0 +1,7 @@
+PDFSolidConversion.CPDFConversion
+==================================
+
+.. autoclass:: PDFSolidConversion.CPDFConversion
+   :members:
+   :undoc-members:
+   :show-inheritance:

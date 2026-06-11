@@ -1,0 +1,7 @@
+PDFSolidConversion.OCRLanguage
+==================================
+
+.. autoclass:: PDFSolidConversion.OCRLanguage
+   :members:
+   :undoc-members:
+   :show-inheritance:

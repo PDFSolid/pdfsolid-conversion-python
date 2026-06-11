@@ -1,0 +1,7 @@
+PDFSolidConversion.OCROption
+==================================
+
+.. autoclass:: PDFSolidConversion.OCROption
+   :members:
+   :undoc-members:
+   :show-inheritance:

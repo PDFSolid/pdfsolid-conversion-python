@@ -1,0 +1,7 @@
+PDFSolidConversion.ExcelWorksheetOption
+========================================
+
+.. autoclass:: PDFSolidConversion.ExcelWorksheetOption
+   :members:
+   :undoc-members:
+   :show-inheritance:

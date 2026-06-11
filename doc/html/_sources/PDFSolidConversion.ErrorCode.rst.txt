@@ -1,0 +1,7 @@
+PDFSolidConversion.ErrorCode
+==================================
+
+.. autoclass:: PDFSolidConversion.ErrorCode
+   :members:
+   :undoc-members:
+   :show-inheritance:

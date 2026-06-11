@@ -1,0 +1,7 @@
+PDFSolidConversion.PageLayoutMode
+==================================
+
+.. autoclass:: PDFSolidConversion.PageLayoutMode
+   :members:
+   :undoc-members:
+   :show-inheritance:

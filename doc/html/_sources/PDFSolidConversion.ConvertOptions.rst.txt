@@ -1,0 +1,133 @@
+PDFSolidConversion.ConvertOptions
+==================================
+
+.. py:currentmodule:: PDFSolidConversion
+
+.. py:class:: ConvertOptions
+
+   Options used by PDF conversion APIs.
+
+   .. py:property:: auto_create_folder
+      :type: bool
+
+      Whether to automatically create folders when exporting multiple documents.
+
+   .. py:property:: contain_annotation
+      :type: bool
+
+      Whether to contain annotations when converting.
+
+   .. py:property:: contain_image
+      :type: bool
+
+      Whether to contain images when converting, which takes effect only when ``enable_ocr`` is false.
+
+   .. py:property:: contain_page_background_image
+      :type: bool
+
+      Whether to contain page background images when converting, which takes effect only when ``enable_ocr`` is true.
+
+   .. py:property:: enable_ai_layout
+      :type: bool
+
+      Whether to enable AI layout analysis during conversion.
+
+   .. py:property:: enable_ai_table_recognition
+      :type: bool
+
+      Whether to enable AI table recognition during conversion.
+
+   .. py:property:: enable_ocr
+      :type: bool
+
+      Whether to use OCR.
+
+   .. py:property:: excel_all_content
+      :type: bool
+
+      Whether to save all PDF content to the XLSX file.
+
+   .. py:property:: excel_csv_format
+      :type: bool
+
+      Whether to save tables in CSV format.
+
+   .. py:property:: excel_worksheet_option
+      :type: ExcelWorksheetOption
+
+      Specifies the Excel worksheet option for conversion.
+
+   .. py:property:: font_name
+      :type: str
+
+      Specifies the font name to convert, for example ``Arial``.
+
+   .. py:property:: formula_to_image
+      :type: bool
+
+      Whether to convert formulas to images.
+
+   .. py:property:: html_option
+      :type: HtmlOption
+
+      Specifies the HTML option for conversion.
+
+   .. py:property:: image_color_mode
+      :type: ImageColorMode
+
+      Specifies the image color mode of the image file.
+
+   .. py:property:: image_path_enhance
+      :type: bool
+
+      Whether to enhance the image path.
+
+   .. py:property:: image_scaling
+      :type: float
+
+      Specifies the image scaling of the image file.
+
+   .. py:property:: image_type
+      :type: ImageType
+
+      Specifies the image type of the image file.
+
+   .. py:property:: json_contain_table
+      :type: bool
+
+      Whether to contain tables when converting PDF to JSON.
+
+   .. py:property:: languages
+      :type: list[OCRLanguage]
+
+      Specifies the OCR languages.
+
+   .. py:property:: ocr_option
+      :type: OCROption
+
+      Specifies the OCR option.
+
+   .. py:property:: output_document_per_page
+      :type: bool
+
+      Whether to output one document per page.
+
+   .. py:property:: page_layout_mode
+      :type: PageLayoutMode
+
+      Specifies the layout mode.
+
+   .. py:property:: page_ranges
+      :type: str
+
+      Specifies the pages to convert, for example ``1-3,5,7-9``.
+
+   .. py:property:: transparent_text
+      :type: bool
+
+      Whether to make text transparent in the output document.
+
+   .. py:property:: txt_table_format
+      :type: bool
+
+      Whether to format tables when converting PDF to TXT.

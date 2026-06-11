@@ -1,0 +1,48 @@
+PDFSolidConversion.LibraryManager
+==================================
+
+.. py:currentmodule:: PDFSolidConversion
+
+.. py:class:: LibraryManager
+
+   The ``LibraryManager`` class manages the conversion SDK lifecycle, including license verification, initialization, logging, quota queries, version queries, and SDK-managed DocumentAI model lifecycle.
+
+   .. py:staticmethod:: license_verify(license: str, device_id: str, app_id: str) -> ErrorCode
+
+      Verifies the provided license key with the device ID and application ID.
+
+   .. py:staticmethod:: initialize(resource_path: str) -> None
+
+      Initializes the SDK library with the given resource path.
+
+   .. py:staticmethod:: release() -> None
+
+      Releases all resources used by the library. Call this when the SDK is no longer needed.
+
+   .. py:staticmethod:: release_document_ai_model() -> None
+
+      Releases the loaded SDK-managed DocumentAI model.
+
+   .. py:staticmethod:: set_logger(enable_info: bool, enable_warning: bool) -> None
+
+      Enables or disables logging for info and warning messages.
+
+   .. py:staticmethod:: get_version() -> str
+
+      Gets the SDK library version.
+
+   .. py:staticmethod:: get_page_count(file_path: str, password: str) -> int
+
+      Returns the number of pages in a document.
+
+   .. py:staticmethod:: get_remaining_page_quota() -> int
+
+      Returns the remaining page quota. Values greater than or equal to 0 are actual remaining pages; -1 means not initialized, -2 means unlimited, and -3 means the quota file is corrupted.
+
+   .. py:staticmethod:: set_document_ai_model(file_path: str, gpu_id: int = -1) -> ErrorCode
+
+      Loads the SDK-managed DocumentAI model used by OCR, layout analysis, and table recognition. ``gpu_id`` selects the GPU for the model; -1 disables GPU use.
+
+   .. py:staticmethod:: set_document_ai_model_count(layout_model_count: int, table_model_count: int) -> None
+
+      Sets the number of SDK-managed AI models for layout analysis and table recognition.

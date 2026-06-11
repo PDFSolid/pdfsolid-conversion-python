@@ -1,0 +1,7 @@
+PDFSolidConversion.ImageColorMode
+==================================
+
+.. autoclass:: PDFSolidConversion.ImageColorMode
+   :members:
+   :undoc-members:
+   :show-inheritance:

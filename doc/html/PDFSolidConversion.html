@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDFSolidConversion Module &mdash; ComPDF Conversion 4.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=42d1b3bd"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PDFSolidConversion.ConvertOptions" href="PDFSolidConversion.ConvertOptions.html" />
+    <link rel="prev" title="Modules" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            ComPDF Conversion
+              <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Modules</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">PDFSolidConversion Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html">PDFSolidConversion.ConvertOptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html">PDFSolidConversion.CPDFConversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html">PDFSolidConversion.ConvertCallback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html">PDFSolidConversion.ErrorCode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageColorMode.html">PDFSolidConversion.ImageColorMode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ExcelWorksheetOption.html">PDFSolidConversion.ExcelWorksheetOption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.HtmlOption.html">PDFSolidConversion.HtmlOption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html">PDFSolidConversion.ImageType</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html">PDFSolidConversion.LibraryManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html">PDFSolidConversion.OCRLanguage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCROption.html">PDFSolidConversion.OCROption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.PageLayoutMode.html">PDFSolidConversion.PageLayoutMode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ComPDF Conversion</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Modules</a></li>
+      <li class="breadcrumb-item active">PDFSolidConversion Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/PDFSolidConversion.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pdfsolidconversion-module">
+<h1>PDFSolidConversion Module<a class="headerlink" href="#pdfsolidconversion-module" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html">PDFSolidConversion.ConvertOptions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions"><code class="docutils literal notranslate"><span class="pre">ConvertOptions</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.auto_create_folder"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.auto_create_folder</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.contain_annotation"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.contain_annotation</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.contain_image"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.contain_image</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.contain_page_background_image"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.contain_page_background_image</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.enable_ai_layout"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.enable_ai_layout</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.enable_ai_table_recognition"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.enable_ai_table_recognition</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.enable_ocr"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.enable_ocr</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.excel_all_content"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.excel_all_content</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.excel_csv_format"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.excel_csv_format</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.excel_worksheet_option"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.excel_worksheet_option</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.font_name"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.font_name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.formula_to_image"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.formula_to_image</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.html_option"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.html_option</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.image_color_mode"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.image_color_mode</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.image_path_enhance"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.image_path_enhance</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.image_scaling"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.image_scaling</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.image_type"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.image_type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.json_contain_table"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.json_contain_table</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.languages"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.languages</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.ocr_option"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.ocr_option</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.output_document_per_page"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.output_document_per_page</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.page_layout_mode"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.page_layout_mode</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.page_ranges"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.page_ranges</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.transparent_text"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.transparent_text</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html#PDFSolidConversion.ConvertOptions.txt_table_format"><code class="docutils literal notranslate"><span class="pre">ConvertOptions.txt_table_format</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html">PDFSolidConversion.CPDFConversion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html#PDFSolidConversion.CPDFConversion"><code class="docutils literal notranslate"><span class="pre">CPDFConversion</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html#PDFSolidConversion.CPDFConversion.start_pdf_to_excel"><code class="docutils literal notranslate"><span class="pre">CPDFConversion.start_pdf_to_excel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html#PDFSolidConversion.CPDFConversion.start_pdf_to_html"><code class="docutils literal notranslate"><span class="pre">CPDFConversion.start_pdf_to_html()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html#PDFSolidConversion.CPDFConversion.start_pdf_to_image"><code class="docutils literal notranslate"><span class="pre">CPDFConversion.start_pdf_to_image()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html#PDFSolidConversion.CPDFConversion.start_pdf_to_json"><code class="docutils literal notranslate"><span class="pre">CPDFConversion.start_pdf_to_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html#PDFSolidConversion.CPDFConversion.start_pdf_to_markdown"><code class="docutils literal notranslate"><span class="pre">CPDFConversion.start_pdf_to_markdown()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html#PDFSolidConversion.CPDFConversion.start_pdf_to_ofd"><code class="docutils literal notranslate"><span class="pre">CPDFConversion.start_pdf_to_ofd()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html#PDFSolidConversion.CPDFConversion.start_pdf_to_ppt"><code class="docutils literal notranslate"><span class="pre">CPDFConversion.start_pdf_to_ppt()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html#PDFSolidConversion.CPDFConversion.start_pdf_to_rtf"><code class="docutils literal notranslate"><span class="pre">CPDFConversion.start_pdf_to_rtf()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html#PDFSolidConversion.CPDFConversion.start_pdf_to_searchable_pdf"><code class="docutils literal notranslate"><span class="pre">CPDFConversion.start_pdf_to_searchable_pdf()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html#PDFSolidConversion.CPDFConversion.start_pdf_to_txt"><code class="docutils literal notranslate"><span class="pre">CPDFConversion.start_pdf_to_txt()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html#PDFSolidConversion.CPDFConversion.start_pdf_to_word"><code class="docutils literal notranslate"><span class="pre">CPDFConversion.start_pdf_to_word()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html">PDFSolidConversion.ConvertCallback</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html#PDFSolidConversion.ConvertCallback"><code class="docutils literal notranslate"><span class="pre">ConvertCallback</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html#PDFSolidConversion.ConvertCallback.__init__"><code class="docutils literal notranslate"><span class="pre">ConvertCallback.__init__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html#PDFSolidConversion.ConvertCallback.reset"><code class="docutils literal notranslate"><span class="pre">ConvertCallback.reset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html#PDFSolidConversion.ConvertCallback.set_cancel"><code class="docutils literal notranslate"><span class="pre">ConvertCallback.set_cancel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html#PDFSolidConversion.ConvertCallback.set_progress"><code class="docutils literal notranslate"><span class="pre">ConvertCallback.set_progress()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html#PDFSolidConversion.ConvertCallback.set_ocr"><code class="docutils literal notranslate"><span class="pre">ConvertCallback.set_ocr()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html#PDFSolidConversion.ConvertCallback.set_layout"><code class="docutils literal notranslate"><span class="pre">ConvertCallback.set_layout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html#PDFSolidConversion.ConvertCallback.set_table"><code class="docutils literal notranslate"><span class="pre">ConvertCallback.set_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html#PDFSolidConversion.ConvertCallback.set_get_ocr_result"><code class="docutils literal notranslate"><span class="pre">ConvertCallback.set_get_ocr_result()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html#PDFSolidConversion.ConvertCallback.set_get_layout_result"><code class="docutils literal notranslate"><span class="pre">ConvertCallback.set_get_layout_result()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html#PDFSolidConversion.ConvertCallback.set_get_table_result"><code class="docutils literal notranslate"><span class="pre">ConvertCallback.set_get_table_result()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html">PDFSolidConversion.ErrorCode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode"><code class="docutils literal notranslate"><span class="pre">ErrorCode</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.CANCEL"><code class="docutils literal notranslate"><span class="pre">ErrorCode.CANCEL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.COMPRESS_ERROR"><code class="docutils literal notranslate"><span class="pre">ErrorCode.COMPRESS_ERROR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.CONVERTING_ERROR"><code class="docutils literal notranslate"><span class="pre">ErrorCode.CONVERTING_ERROR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.EXPIRE_ERROR"><code class="docutils literal notranslate"><span class="pre">ErrorCode.EXPIRE_ERROR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.FILE_ERROR"><code class="docutils literal notranslate"><span class="pre">ErrorCode.FILE_ERROR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.IMAGE_DATA_EMPTY"><code class="docutils literal notranslate"><span class="pre">ErrorCode.IMAGE_DATA_EMPTY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.IMAGE_FORMAT_UNSUPPORTED"><code class="docutils literal notranslate"><span class="pre">ErrorCode.IMAGE_FORMAT_UNSUPPORTED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.IMAGE_INVALID"><code class="docutils literal notranslate"><span class="pre">ErrorCode.IMAGE_INVALID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.IMAGE_WIDTH_HEIGHT_ERROR"><code class="docutils literal notranslate"><span class="pre">ErrorCode.IMAGE_WIDTH_HEIGHT_ERROR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.INVALID_ARG"><code class="docutils literal notranslate"><span class="pre">ErrorCode.INVALID_ARG</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.INVALID_HANDLE"><code class="docutils literal notranslate"><span class="pre">ErrorCode.INVALID_HANDLE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.INVALID_MODEL_FORMAT"><code class="docutils literal notranslate"><span class="pre">ErrorCode.INVALID_MODEL_FORMAT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.INVALID_TABLE"><code class="docutils literal notranslate"><span class="pre">ErrorCode.INVALID_TABLE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.IO_ERROR"><code class="docutils literal notranslate"><span class="pre">ErrorCode.IO_ERROR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.LICENSE_CONCURRENCY_EXCEEDED"><code class="docutils literal notranslate"><span class="pre">ErrorCode.LICENSE_CONCURRENCY_EXCEEDED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.LICENSE_EXPIRE"><code class="docutils literal notranslate"><span class="pre">ErrorCode.LICENSE_EXPIRE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.LICENSE_FILE_READ_FAILED"><code class="docutils literal notranslate"><span class="pre">ErrorCode.LICENSE_FILE_READ_FAILED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.LICENSE_ILLEGAL_ACCESS"><code class="docutils literal notranslate"><span class="pre">ErrorCode.LICENSE_ILLEGAL_ACCESS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.LICENSE_INVALID"><code class="docutils literal notranslate"><span class="pre">ErrorCode.LICENSE_INVALID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.LICENSE_MISMATCH"><code class="docutils literal notranslate"><span class="pre">ErrorCode.LICENSE_MISMATCH</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.LICENSE_OCR_PERMISSION_DENY"><code class="docutils literal notranslate"><span class="pre">ErrorCode.LICENSE_OCR_PERMISSION_DENY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.LICENSE_PAGE_LIMIT_EXCEEDED"><code class="docutils literal notranslate"><span class="pre">ErrorCode.LICENSE_PAGE_LIMIT_EXCEEDED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.LICENSE_PERMISSION_DENY"><code class="docutils literal notranslate"><span class="pre">ErrorCode.LICENSE_PERMISSION_DENY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.LICENSE_QUOTA_CORRUPTED"><code class="docutils literal notranslate"><span class="pre">ErrorCode.LICENSE_QUOTA_CORRUPTED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.LICENSE_UNINITIALIZED"><code class="docutils literal notranslate"><span class="pre">ErrorCode.LICENSE_UNINITIALIZED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.LICENSE_UNSUPPORTED_API"><code class="docutils literal notranslate"><span class="pre">ErrorCode.LICENSE_UNSUPPORTED_API</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.LICENSE_UNSUPPORTED_DEVICE"><code class="docutils literal notranslate"><span class="pre">ErrorCode.LICENSE_UNSUPPORTED_DEVICE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.LICENSE_UNSUPPORTED_ID"><code class="docutils literal notranslate"><span class="pre">ErrorCode.LICENSE_UNSUPPORTED_ID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.LICENSE_UNSUPPORTED_PLATFORM"><code class="docutils literal notranslate"><span class="pre">ErrorCode.LICENSE_UNSUPPORTED_PLATFORM</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.MISSING_ARG"><code class="docutils literal notranslate"><span class="pre">ErrorCode.MISSING_ARG</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.MODEL_FORMAT_UNSUPPORTED"><code class="docutils literal notranslate"><span class="pre">ErrorCode.MODEL_FORMAT_UNSUPPORTED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.MODEL_FUNCTION_UNSUPPORTED"><code class="docutils literal notranslate"><span class="pre">ErrorCode.MODEL_FUNCTION_UNSUPPORTED</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.MODEL_SDK_MISMATCH"><code class="docutils literal notranslate"><span class="pre">ErrorCode.MODEL_SDK_MISMATCH</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.NO_TABLE_ERROR"><code class="docutils literal notranslate"><span class="pre">ErrorCode.NO_TABLE_ERROR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.OCR_FAILURE"><code class="docutils literal notranslate"><span class="pre">ErrorCode.OCR_FAILURE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.OUT_OF_MEMORY"><code class="docutils literal notranslate"><span class="pre">ErrorCode.OUT_OF_MEMORY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.PDF_FORMAT_ERROR"><code class="docutils literal notranslate"><span class="pre">ErrorCode.PDF_FORMAT_ERROR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.PDF_PAGE_ERROR"><code class="docutils literal notranslate"><span class="pre">ErrorCode.PDF_PAGE_ERROR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.PDF_PASSWORD_ERROR"><code class="docutils literal notranslate"><span class="pre">ErrorCode.PDF_PASSWORD_ERROR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.PDF_SECURITY_ERROR"><code class="docutils literal notranslate"><span class="pre">ErrorCode.PDF_SECURITY_ERROR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.SUCCESS"><code class="docutils literal notranslate"><span class="pre">ErrorCode.SUCCESS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.UNKNOWN_ERROR"><code class="docutils literal notranslate"><span class="pre">ErrorCode.UNKNOWN_ERROR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.name"><code class="docutils literal notranslate"><span class="pre">ErrorCode.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode.value"><code class="docutils literal notranslate"><span class="pre">ErrorCode.value</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PDFSolidConversion.ImageColorMode.html">PDFSolidConversion.ImageColorMode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PDFSolidConversion.ImageColorMode.html#PDFSolidConversion.ImageColorMode"><code class="docutils literal notranslate"><span class="pre">ImageColorMode</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageColorMode.html#PDFSolidConversion.ImageColorMode.BINARY"><code class="docutils literal notranslate"><span class="pre">ImageColorMode.BINARY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageColorMode.html#PDFSolidConversion.ImageColorMode.COLOR"><code class="docutils literal notranslate"><span class="pre">ImageColorMode.COLOR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageColorMode.html#PDFSolidConversion.ImageColorMode.GRAY"><code class="docutils literal notranslate"><span class="pre">ImageColorMode.GRAY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageColorMode.html#PDFSolidConversion.ImageColorMode.name"><code class="docutils literal notranslate"><span class="pre">ImageColorMode.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageColorMode.html#PDFSolidConversion.ImageColorMode.value"><code class="docutils literal notranslate"><span class="pre">ImageColorMode.value</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PDFSolidConversion.ExcelWorksheetOption.html">PDFSolidConversion.ExcelWorksheetOption</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PDFSolidConversion.ExcelWorksheetOption.html#PDFSolidConversion.ExcelWorksheetOption"><code class="docutils literal notranslate"><span class="pre">ExcelWorksheetOption</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ExcelWorksheetOption.html#PDFSolidConversion.ExcelWorksheetOption.FOR_DOCUMENT"><code class="docutils literal notranslate"><span class="pre">ExcelWorksheetOption.FOR_DOCUMENT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ExcelWorksheetOption.html#PDFSolidConversion.ExcelWorksheetOption.FOR_PAGE"><code class="docutils literal notranslate"><span class="pre">ExcelWorksheetOption.FOR_PAGE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ExcelWorksheetOption.html#PDFSolidConversion.ExcelWorksheetOption.FOR_TABLE"><code class="docutils literal notranslate"><span class="pre">ExcelWorksheetOption.FOR_TABLE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ExcelWorksheetOption.html#PDFSolidConversion.ExcelWorksheetOption.name"><code class="docutils literal notranslate"><span class="pre">ExcelWorksheetOption.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ExcelWorksheetOption.html#PDFSolidConversion.ExcelWorksheetOption.value"><code class="docutils literal notranslate"><span class="pre">ExcelWorksheetOption.value</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PDFSolidConversion.HtmlOption.html">PDFSolidConversion.HtmlOption</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PDFSolidConversion.HtmlOption.html#PDFSolidConversion.HtmlOption"><code class="docutils literal notranslate"><span class="pre">HtmlOption</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.HtmlOption.html#PDFSolidConversion.HtmlOption.MULTIPLE_PAGE"><code class="docutils literal notranslate"><span class="pre">HtmlOption.MULTIPLE_PAGE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.HtmlOption.html#PDFSolidConversion.HtmlOption.MULTIPLE_PAGE_WITH_BOOKMARK"><code class="docutils literal notranslate"><span class="pre">HtmlOption.MULTIPLE_PAGE_WITH_BOOKMARK</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.HtmlOption.html#PDFSolidConversion.HtmlOption.SINGLE_PAGE"><code class="docutils literal notranslate"><span class="pre">HtmlOption.SINGLE_PAGE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.HtmlOption.html#PDFSolidConversion.HtmlOption.SINGLE_PAGE_WITH_BOOKMARK"><code class="docutils literal notranslate"><span class="pre">HtmlOption.SINGLE_PAGE_WITH_BOOKMARK</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.HtmlOption.html#PDFSolidConversion.HtmlOption.name"><code class="docutils literal notranslate"><span class="pre">HtmlOption.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.HtmlOption.html#PDFSolidConversion.HtmlOption.value"><code class="docutils literal notranslate"><span class="pre">HtmlOption.value</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PDFSolidConversion.ImageType.html">PDFSolidConversion.ImageType</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PDFSolidConversion.ImageType.html#PDFSolidConversion.ImageType"><code class="docutils literal notranslate"><span class="pre">ImageType</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html#PDFSolidConversion.ImageType.BMP"><code class="docutils literal notranslate"><span class="pre">ImageType.BMP</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html#PDFSolidConversion.ImageType.GIF"><code class="docutils literal notranslate"><span class="pre">ImageType.GIF</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html#PDFSolidConversion.ImageType.JPEG"><code class="docutils literal notranslate"><span class="pre">ImageType.JPEG</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html#PDFSolidConversion.ImageType.JPEG2000"><code class="docutils literal notranslate"><span class="pre">ImageType.JPEG2000</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html#PDFSolidConversion.ImageType.JPG"><code class="docutils literal notranslate"><span class="pre">ImageType.JPG</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html#PDFSolidConversion.ImageType.PNG"><code class="docutils literal notranslate"><span class="pre">ImageType.PNG</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html#PDFSolidConversion.ImageType.TGA"><code class="docutils literal notranslate"><span class="pre">ImageType.TGA</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html#PDFSolidConversion.ImageType.TIFF"><code class="docutils literal notranslate"><span class="pre">ImageType.TIFF</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html#PDFSolidConversion.ImageType.WEBP"><code class="docutils literal notranslate"><span class="pre">ImageType.WEBP</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html#PDFSolidConversion.ImageType.name"><code class="docutils literal notranslate"><span class="pre">ImageType.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html#PDFSolidConversion.ImageType.value"><code class="docutils literal notranslate"><span class="pre">ImageType.value</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html">PDFSolidConversion.LibraryManager</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html#PDFSolidConversion.LibraryManager"><code class="docutils literal notranslate"><span class="pre">LibraryManager</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html#PDFSolidConversion.LibraryManager.license_verify"><code class="docutils literal notranslate"><span class="pre">LibraryManager.license_verify()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html#PDFSolidConversion.LibraryManager.initialize"><code class="docutils literal notranslate"><span class="pre">LibraryManager.initialize()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html#PDFSolidConversion.LibraryManager.release"><code class="docutils literal notranslate"><span class="pre">LibraryManager.release()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html#PDFSolidConversion.LibraryManager.release_document_ai_model"><code class="docutils literal notranslate"><span class="pre">LibraryManager.release_document_ai_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html#PDFSolidConversion.LibraryManager.set_logger"><code class="docutils literal notranslate"><span class="pre">LibraryManager.set_logger()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html#PDFSolidConversion.LibraryManager.get_version"><code class="docutils literal notranslate"><span class="pre">LibraryManager.get_version()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html#PDFSolidConversion.LibraryManager.get_page_count"><code class="docutils literal notranslate"><span class="pre">LibraryManager.get_page_count()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html#PDFSolidConversion.LibraryManager.get_remaining_page_quota"><code class="docutils literal notranslate"><span class="pre">LibraryManager.get_remaining_page_quota()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html#PDFSolidConversion.LibraryManager.set_document_ai_model"><code class="docutils literal notranslate"><span class="pre">LibraryManager.set_document_ai_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html#PDFSolidConversion.LibraryManager.set_document_ai_model_count"><code class="docutils literal notranslate"><span class="pre">LibraryManager.set_document_ai_model_count()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html">PDFSolidConversion.OCRLanguage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage"><code class="docutils literal notranslate"><span class="pre">OCRLanguage</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.ARABIC"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.ARABIC</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.AUTO"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.AUTO</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.CHINESE"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.CHINESE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.CHINESE_TRA"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.CHINESE_TRA</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.CYRILLIC"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.CYRILLIC</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.DEVANAGARI"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.DEVANAGARI</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.ENGLISH"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.ENGLISH</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.ESLAV"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.ESLAV</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.GREEK"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.GREEK</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.JAPANESE"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.JAPANESE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.KANNADA"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.KANNADA</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.KOREAN"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.KOREAN</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.LATIN"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.LATIN</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.TAMIL"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.TAMIL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.TELUGU"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.TELUGU</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.THAI"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.THAI</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.UNKNOWN"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.UNKNOWN</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.name"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage.value"><code class="docutils literal notranslate"><span class="pre">OCRLanguage.value</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PDFSolidConversion.OCROption.html">PDFSolidConversion.OCROption</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PDFSolidConversion.OCROption.html#PDFSolidConversion.OCROption"><code class="docutils literal notranslate"><span class="pre">OCROption</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCROption.html#PDFSolidConversion.OCROption.ALL"><code class="docutils literal notranslate"><span class="pre">OCROption.ALL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCROption.html#PDFSolidConversion.OCROption.INVALID_CHARACTER"><code class="docutils literal notranslate"><span class="pre">OCROption.INVALID_CHARACTER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCROption.html#PDFSolidConversion.OCROption.INVALID_CHARACTER_AND_SCAN_PAGE"><code class="docutils literal notranslate"><span class="pre">OCROption.INVALID_CHARACTER_AND_SCAN_PAGE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCROption.html#PDFSolidConversion.OCROption.SCAN_PAGE"><code class="docutils literal notranslate"><span class="pre">OCROption.SCAN_PAGE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCROption.html#PDFSolidConversion.OCROption.name"><code class="docutils literal notranslate"><span class="pre">OCROption.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCROption.html#PDFSolidConversion.OCROption.value"><code class="docutils literal notranslate"><span class="pre">OCROption.value</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PDFSolidConversion.PageLayoutMode.html">PDFSolidConversion.PageLayoutMode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="PDFSolidConversion.PageLayoutMode.html#PDFSolidConversion.PageLayoutMode"><code class="docutils literal notranslate"><span class="pre">PageLayoutMode</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.PageLayoutMode.html#PDFSolidConversion.PageLayoutMode.BOX"><code class="docutils literal notranslate"><span class="pre">PageLayoutMode.BOX</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.PageLayoutMode.html#PDFSolidConversion.PageLayoutMode.FLOW"><code class="docutils literal notranslate"><span class="pre">PageLayoutMode.FLOW</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.PageLayoutMode.html#PDFSolidConversion.PageLayoutMode.name"><code class="docutils literal notranslate"><span class="pre">PageLayoutMode.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.PageLayoutMode.html#PDFSolidConversion.PageLayoutMode.value"><code class="docutils literal notranslate"><span class="pre">PageLayoutMode.value</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="Modules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="PDFSolidConversion.ConvertOptions.html" class="btn btn-neutral float-right" title="PDFSolidConversion.ConvertOptions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, PDF Technologies, Inc.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

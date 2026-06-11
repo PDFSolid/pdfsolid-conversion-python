@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDFSolidConversion.ConvertOptions &mdash; ComPDF Conversion 4.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=42d1b3bd"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PDFSolidConversion.CPDFConversion" href="PDFSolidConversion.CPDFConversion.html" />
+    <link rel="prev" title="PDFSolidConversion Module" href="PDFSolidConversion.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            ComPDF Conversion
+              <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Modules</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="PDFSolidConversion.html">PDFSolidConversion Module</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">PDFSolidConversion.ConvertOptions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#PDFSolidConversion.ConvertOptions"><code class="docutils literal notranslate"><span class="pre">ConvertOptions</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html">PDFSolidConversion.CPDFConversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html">PDFSolidConversion.ConvertCallback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html">PDFSolidConversion.ErrorCode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageColorMode.html">PDFSolidConversion.ImageColorMode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ExcelWorksheetOption.html">PDFSolidConversion.ExcelWorksheetOption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.HtmlOption.html">PDFSolidConversion.HtmlOption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html">PDFSolidConversion.ImageType</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html">PDFSolidConversion.LibraryManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html">PDFSolidConversion.OCRLanguage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCROption.html">PDFSolidConversion.OCROption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.PageLayoutMode.html">PDFSolidConversion.PageLayoutMode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ComPDF Conversion</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Modules</a></li>
+          <li class="breadcrumb-item"><a href="PDFSolidConversion.html">PDFSolidConversion Module</a></li>
+      <li class="breadcrumb-item active">PDFSolidConversion.ConvertOptions</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/PDFSolidConversion.ConvertOptions.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pdfsolidconversion-convertoptions">
+<h1>PDFSolidConversion.ConvertOptions<a class="headerlink" href="#pdfsolidconversion-convertoptions" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">PDFSolidConversion.</span></span><span class="sig-name descname"><span class="pre">ConvertOptions</span></span><a class="headerlink" href="#PDFSolidConversion.ConvertOptions" title="Link to this definition"></a></dt>
+<dd><p>Options used by PDF conversion APIs.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.auto_create_folder">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">auto_create_folder</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.auto_create_folder" title="Link to this definition"></a></dt>
+<dd><p>Whether to automatically create folders when exporting multiple documents.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.contain_annotation">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">contain_annotation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.contain_annotation" title="Link to this definition"></a></dt>
+<dd><p>Whether to contain annotations when converting.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.contain_image">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">contain_image</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.contain_image" title="Link to this definition"></a></dt>
+<dd><p>Whether to contain images when converting, which takes effect only when <code class="docutils literal notranslate"><span class="pre">enable_ocr</span></code> is false.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.contain_page_background_image">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">contain_page_background_image</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.contain_page_background_image" title="Link to this definition"></a></dt>
+<dd><p>Whether to contain page background images when converting, which takes effect only when <code class="docutils literal notranslate"><span class="pre">enable_ocr</span></code> is true.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.enable_ai_layout">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">enable_ai_layout</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.enable_ai_layout" title="Link to this definition"></a></dt>
+<dd><p>Whether to enable AI layout analysis during conversion.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.enable_ai_table_recognition">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">enable_ai_table_recognition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.enable_ai_table_recognition" title="Link to this definition"></a></dt>
+<dd><p>Whether to enable AI table recognition during conversion.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.enable_ocr">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">enable_ocr</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.enable_ocr" title="Link to this definition"></a></dt>
+<dd><p>Whether to use OCR.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.excel_all_content">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">excel_all_content</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.excel_all_content" title="Link to this definition"></a></dt>
+<dd><p>Whether to save all PDF content to the XLSX file.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.excel_csv_format">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">excel_csv_format</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.excel_csv_format" title="Link to this definition"></a></dt>
+<dd><p>Whether to save tables in CSV format.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.excel_worksheet_option">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">excel_worksheet_option</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="PDFSolidConversion.ExcelWorksheetOption.html#PDFSolidConversion.ExcelWorksheetOption" title="PDFSolidConversion.ExcelWorksheetOption"><span class="pre">ExcelWorksheetOption</span></a></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.excel_worksheet_option" title="Link to this definition"></a></dt>
+<dd><p>Specifies the Excel worksheet option for conversion.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.font_name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">font_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.font_name" title="Link to this definition"></a></dt>
+<dd><p>Specifies the font name to convert, for example <code class="docutils literal notranslate"><span class="pre">Arial</span></code>.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.formula_to_image">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">formula_to_image</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.formula_to_image" title="Link to this definition"></a></dt>
+<dd><p>Whether to convert formulas to images.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.html_option">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">html_option</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="PDFSolidConversion.HtmlOption.html#PDFSolidConversion.HtmlOption" title="PDFSolidConversion.HtmlOption"><span class="pre">HtmlOption</span></a></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.html_option" title="Link to this definition"></a></dt>
+<dd><p>Specifies the HTML option for conversion.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.image_color_mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">image_color_mode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="PDFSolidConversion.ImageColorMode.html#PDFSolidConversion.ImageColorMode" title="PDFSolidConversion.ImageColorMode"><span class="pre">ImageColorMode</span></a></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.image_color_mode" title="Link to this definition"></a></dt>
+<dd><p>Specifies the image color mode of the image file.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.image_path_enhance">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">image_path_enhance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.image_path_enhance" title="Link to this definition"></a></dt>
+<dd><p>Whether to enhance the image path.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.image_scaling">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">image_scaling</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.image_scaling" title="Link to this definition"></a></dt>
+<dd><p>Specifies the image scaling of the image file.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.image_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">image_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="PDFSolidConversion.ImageType.html#PDFSolidConversion.ImageType" title="PDFSolidConversion.ImageType"><span class="pre">ImageType</span></a></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.image_type" title="Link to this definition"></a></dt>
+<dd><p>Specifies the image type of the image file.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.json_contain_table">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">json_contain_table</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.json_contain_table" title="Link to this definition"></a></dt>
+<dd><p>Whether to contain tables when converting PDF to JSON.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.languages">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">languages</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html#PDFSolidConversion.OCRLanguage" title="PDFSolidConversion.OCRLanguage"><span class="pre">OCRLanguage</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.languages" title="Link to this definition"></a></dt>
+<dd><p>Specifies the OCR languages.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.ocr_option">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ocr_option</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="PDFSolidConversion.OCROption.html#PDFSolidConversion.OCROption" title="PDFSolidConversion.OCROption"><span class="pre">OCROption</span></a></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.ocr_option" title="Link to this definition"></a></dt>
+<dd><p>Specifies the OCR option.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.output_document_per_page">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_document_per_page</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.output_document_per_page" title="Link to this definition"></a></dt>
+<dd><p>Whether to output one document per page.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.page_layout_mode">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">page_layout_mode</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="PDFSolidConversion.PageLayoutMode.html#PDFSolidConversion.PageLayoutMode" title="PDFSolidConversion.PageLayoutMode"><span class="pre">PageLayoutMode</span></a></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.page_layout_mode" title="Link to this definition"></a></dt>
+<dd><p>Specifies the layout mode.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.page_ranges">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">page_ranges</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.page_ranges" title="Link to this definition"></a></dt>
+<dd><p>Specifies the pages to convert, for example <code class="docutils literal notranslate"><span class="pre">1-3,5,7-9</span></code>.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.transparent_text">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">transparent_text</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.transparent_text" title="Link to this definition"></a></dt>
+<dd><p>Whether to make text transparent in the output document.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ConvertOptions.txt_table_format">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">txt_table_format</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#PDFSolidConversion.ConvertOptions.txt_table_format" title="Link to this definition"></a></dt>
+<dd><p>Whether to format tables when converting PDF to TXT.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="PDFSolidConversion.html" class="btn btn-neutral float-left" title="PDFSolidConversion Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="PDFSolidConversion.CPDFConversion.html" class="btn btn-neutral float-right" title="PDFSolidConversion.CPDFConversion" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, PDF Technologies, Inc.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

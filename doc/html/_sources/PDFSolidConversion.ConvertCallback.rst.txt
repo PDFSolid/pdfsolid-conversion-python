@@ -1,0 +1,48 @@
+PDFSolidConversion.ConvertCallback
+===================================
+
+.. py:currentmodule:: PDFSolidConversion
+
+.. py:class:: ConvertCallback
+
+   Callback bundle for conversion progress, cancellation, and advanced external recognition hooks. Each instance maintains its own callback state.
+
+   .. py:method:: __init__() -> None
+
+      Creates an empty callback bundle.
+
+   .. py:method:: reset() -> None
+
+      Resets all callbacks to ``None``.
+
+   .. py:method:: set_cancel(cancel: Callable[[], bool]) -> None
+
+      Sets a callback function for cancellation checks. Return ``True`` to cancel the conversion.
+
+   .. py:method:: set_progress(progress: Callable[[int, int], None]) -> None
+
+      Sets a callback function to track conversion progress. The callback receives ``current_page`` and ``total_page``.
+
+   .. py:method:: set_ocr(ocr: Callable[[str], bool]) -> None
+
+      Sets a trigger callback for external OCR. The callback receives an image path and returns ``True`` on success.
+
+   .. py:method:: set_layout(layout: Callable[[str], bool]) -> None
+
+      Sets a trigger callback for external layout analysis. The callback receives an image path and returns ``True`` on success.
+
+   .. py:method:: set_table(table: Callable[[str], bool]) -> None
+
+      Sets a trigger callback for external table recognition. The callback receives an image path and returns ``True`` on success.
+
+   .. py:method:: set_get_ocr_result(get_ocr_result: Callable[[], str]) -> None
+
+      Sets a getter callback to retrieve OCR result data as a JSON string.
+
+   .. py:method:: set_get_layout_result(get_layout_result: Callable[[], str]) -> None
+
+      Sets a getter callback to retrieve layout analysis result data as a JSON string.
+
+   .. py:method:: set_get_table_result(get_table_result: Callable[[], str]) -> None
+
+      Sets a getter callback to retrieve table recognition result data as a JSON string.

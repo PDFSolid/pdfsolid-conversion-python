@@ -1,0 +1,7 @@
+PDFSolidConversion.ImageType
+==================================
+
+.. autoclass:: PDFSolidConversion.ImageType
+   :members:
+   :undoc-members:
+   :show-inheritance:

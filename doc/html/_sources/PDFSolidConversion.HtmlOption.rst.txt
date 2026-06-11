@@ -1,0 +1,7 @@
+PDFSolidConversion.HtmlOption
+==================================
+
+.. autoclass:: PDFSolidConversion.HtmlOption
+   :members:
+   :undoc-members:
+   :show-inheritance:

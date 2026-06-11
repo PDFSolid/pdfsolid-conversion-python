@@ -1,0 +1,402 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDFSolidConversion.ErrorCode &mdash; ComPDF Conversion 4.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=42d1b3bd"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PDFSolidConversion.ImageColorMode" href="PDFSolidConversion.ImageColorMode.html" />
+    <link rel="prev" title="PDFSolidConversion.ConvertCallback" href="PDFSolidConversion.ConvertCallback.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            ComPDF Conversion
+              <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Modules</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="PDFSolidConversion.html">PDFSolidConversion Module</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html">PDFSolidConversion.ConvertOptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html">PDFSolidConversion.CPDFConversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html">PDFSolidConversion.ConvertCallback</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">PDFSolidConversion.ErrorCode</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#PDFSolidConversion.ErrorCode"><code class="docutils literal notranslate"><span class="pre">ErrorCode</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageColorMode.html">PDFSolidConversion.ImageColorMode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ExcelWorksheetOption.html">PDFSolidConversion.ExcelWorksheetOption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.HtmlOption.html">PDFSolidConversion.HtmlOption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html">PDFSolidConversion.ImageType</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html">PDFSolidConversion.LibraryManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html">PDFSolidConversion.OCRLanguage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCROption.html">PDFSolidConversion.OCROption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.PageLayoutMode.html">PDFSolidConversion.PageLayoutMode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ComPDF Conversion</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Modules</a></li>
+          <li class="breadcrumb-item"><a href="PDFSolidConversion.html">PDFSolidConversion Module</a></li>
+      <li class="breadcrumb-item active">PDFSolidConversion.ErrorCode</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/PDFSolidConversion.ErrorCode.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pdfsolidconversion-errorcode">
+<h1>PDFSolidConversion.ErrorCode<a class="headerlink" href="#pdfsolidconversion-errorcode" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">PDFSolidConversion.</span></span><span class="sig-name descname"><span class="pre">ErrorCode</span></span><a class="headerlink" href="#PDFSolidConversion.ErrorCode" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pybind11_object</span></code></p>
+<p>Members:</p>
+<p>SUCCESS : Success, and no error occurs</p>
+<p>CANCEL : Conversion process was canceled</p>
+<p>FILE_ERROR : File cannot be found or could not be opened</p>
+<p>PDF_PASSWORD_ERROR : Invalid password. Usually, this error may occur when loading a PDF document with password. When meet this, user should load document again with correct password</p>
+<p>PDF_PAGE_ERROR : PDF page failed to load</p>
+<p>PDF_FORMAT_ERROR : Format is invalid. For files, this may also mean that file is corrupted</p>
+<p>PDF_SECURITY_ERROR : PDF document is encrypted by some unsupported security handler</p>
+<p>OUT_OF_MEMORY : Out-of-memory error occurs</p>
+<p>IO_ERROR : System I/O error</p>
+<p>COMPRESS_ERROR : Folder compression failed</p>
+<p>LICENSE_INVALID : The license is invalid</p>
+<p>LICENSE_EXPIRE : The license has expired</p>
+<p>LICENSE_UNSUPPORTED_PLATFORM : The license does not support the current platform</p>
+<p>LICENSE_UNSUPPORTED_ID : The license does not support the application id</p>
+<p>LICENSE_UNSUPPORTED_DEVICE : The license does not support the device id</p>
+<p>LICENSE_PERMISSION_DENY : The license does not have the function permission</p>
+<p>LICENSE_UNINITIALIZED : The license has not been initialized</p>
+<p>LICENSE_ILLEGAL_ACCESS : Illegal access to the API interface</p>
+<p>LICENSE_FILE_READ_FAILED : Failed to read license file</p>
+<p>LICENSE_OCR_PERMISSION_DENY : The license does not have OCR permissions</p>
+<p>LICENSE_CONCURRENCY_EXCEEDED : The current conversion concurrency exceeds the license limit</p>
+<p>LICENSE_PAGE_LIMIT_EXCEEDED : The current conversion pages exceed the license limit</p>
+<p>LICENSE_QUOTA_CORRUPTED : The quota persistence file has been tampered with</p>
+<p>NO_TABLE_ERROR : No tables found in the source file</p>
+<p>OCR_FAILURE : Failed to call OCR recognition</p>
+<p>CONVERTING_ERROR : Currently executing conversion task</p>
+<p>INVALID_ARG : Invalid argument provided</p>
+<p>INVALID_HANDLE : The handle is invalid, possibly uninitialized or already released</p>
+<p>INVALID_MODEL_FORMAT : The model file format is invalid or corrupted</p>
+<p>MODEL_FUNCTION_UNSUPPORTED : The model does not support the requested function or operation</p>
+<p>MODEL_FORMAT_UNSUPPORTED : The model format is not supported by this system or SDK</p>
+<p>MODEL_SDK_MISMATCH : The model is incompatible with the current SDK version</p>
+<p>IMAGE_DATA_EMPTY : The image data is empty or not provided</p>
+<p>IMAGE_WIDTH_HEIGHT_ERROR : The image width or height is invalid (e.g., less than or equal to zero)</p>
+<p>IMAGE_FORMAT_UNSUPPORTED : The image format is not supported (e.g., not RGB, YUV, etc.)</p>
+<p>IMAGE_INVALID : The image is invalid or corrupted</p>
+<p>EXPIRE_ERROR : The resource (e.g., license, token) has expired</p>
+<p>MISSING_ARG : A required argument is missing</p>
+<p>LICENSE_UNSUPPORTED_API : The current license does not support calling this API</p>
+<p>LICENSE_MISMATCH : The license does not match the device, module, or version</p>
+<p>INVALID_TABLE : The table data is invalid or null</p>
+<p>UNKNOWN_ERROR : Unknown error</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.CANCEL">
+<span class="sig-name descname"><span class="pre">CANCEL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.CANCEL:</span> <span class="pre">1&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.CANCEL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.COMPRESS_ERROR">
+<span class="sig-name descname"><span class="pre">COMPRESS_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.COMPRESS_ERROR:</span> <span class="pre">9&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.COMPRESS_ERROR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.CONVERTING_ERROR">
+<span class="sig-name descname"><span class="pre">CONVERTING_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.CONVERTING_ERROR:</span> <span class="pre">60&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.CONVERTING_ERROR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.EXPIRE_ERROR">
+<span class="sig-name descname"><span class="pre">EXPIRE_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.EXPIRE_ERROR:</span> <span class="pre">90&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.EXPIRE_ERROR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.FILE_ERROR">
+<span class="sig-name descname"><span class="pre">FILE_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.FILE_ERROR:</span> <span class="pre">2&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.FILE_ERROR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.IMAGE_DATA_EMPTY">
+<span class="sig-name descname"><span class="pre">IMAGE_DATA_EMPTY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.IMAGE_DATA_EMPTY:</span> <span class="pre">86&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.IMAGE_DATA_EMPTY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.IMAGE_FORMAT_UNSUPPORTED">
+<span class="sig-name descname"><span class="pre">IMAGE_FORMAT_UNSUPPORTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.IMAGE_FORMAT_UNSUPPORTED:</span> <span class="pre">88&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.IMAGE_FORMAT_UNSUPPORTED" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.IMAGE_INVALID">
+<span class="sig-name descname"><span class="pre">IMAGE_INVALID</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.IMAGE_INVALID:</span> <span class="pre">89&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.IMAGE_INVALID" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.IMAGE_WIDTH_HEIGHT_ERROR">
+<span class="sig-name descname"><span class="pre">IMAGE_WIDTH_HEIGHT_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.IMAGE_WIDTH_HEIGHT_ERROR:</span> <span class="pre">87&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.IMAGE_WIDTH_HEIGHT_ERROR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.INVALID_ARG">
+<span class="sig-name descname"><span class="pre">INVALID_ARG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.INVALID_ARG:</span> <span class="pre">80&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.INVALID_ARG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.INVALID_HANDLE">
+<span class="sig-name descname"><span class="pre">INVALID_HANDLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.INVALID_HANDLE:</span> <span class="pre">81&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.INVALID_HANDLE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.INVALID_MODEL_FORMAT">
+<span class="sig-name descname"><span class="pre">INVALID_MODEL_FORMAT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.INVALID_MODEL_FORMAT:</span> <span class="pre">82&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.INVALID_MODEL_FORMAT" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.INVALID_TABLE">
+<span class="sig-name descname"><span class="pre">INVALID_TABLE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.INVALID_TABLE:</span> <span class="pre">94&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.INVALID_TABLE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.IO_ERROR">
+<span class="sig-name descname"><span class="pre">IO_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.IO_ERROR:</span> <span class="pre">8&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.IO_ERROR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.LICENSE_CONCURRENCY_EXCEEDED">
+<span class="sig-name descname"><span class="pre">LICENSE_CONCURRENCY_EXCEEDED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.LICENSE_CONCURRENCY_EXCEEDED:</span> <span class="pre">30&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.LICENSE_CONCURRENCY_EXCEEDED" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.LICENSE_EXPIRE">
+<span class="sig-name descname"><span class="pre">LICENSE_EXPIRE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.LICENSE_EXPIRE:</span> <span class="pre">21&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.LICENSE_EXPIRE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.LICENSE_FILE_READ_FAILED">
+<span class="sig-name descname"><span class="pre">LICENSE_FILE_READ_FAILED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.LICENSE_FILE_READ_FAILED:</span> <span class="pre">28&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.LICENSE_FILE_READ_FAILED" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.LICENSE_ILLEGAL_ACCESS">
+<span class="sig-name descname"><span class="pre">LICENSE_ILLEGAL_ACCESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.LICENSE_ILLEGAL_ACCESS:</span> <span class="pre">27&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.LICENSE_ILLEGAL_ACCESS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.LICENSE_INVALID">
+<span class="sig-name descname"><span class="pre">LICENSE_INVALID</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.LICENSE_INVALID:</span> <span class="pre">20&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.LICENSE_INVALID" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.LICENSE_MISMATCH">
+<span class="sig-name descname"><span class="pre">LICENSE_MISMATCH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.LICENSE_MISMATCH:</span> <span class="pre">93&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.LICENSE_MISMATCH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.LICENSE_OCR_PERMISSION_DENY">
+<span class="sig-name descname"><span class="pre">LICENSE_OCR_PERMISSION_DENY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.LICENSE_OCR_PERMISSION_DENY:</span> <span class="pre">29&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.LICENSE_OCR_PERMISSION_DENY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.LICENSE_PAGE_LIMIT_EXCEEDED">
+<span class="sig-name descname"><span class="pre">LICENSE_PAGE_LIMIT_EXCEEDED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.LICENSE_PAGE_LIMIT_EXCEEDED:</span> <span class="pre">31&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.LICENSE_PAGE_LIMIT_EXCEEDED" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.LICENSE_PERMISSION_DENY">
+<span class="sig-name descname"><span class="pre">LICENSE_PERMISSION_DENY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.LICENSE_PERMISSION_DENY:</span> <span class="pre">25&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.LICENSE_PERMISSION_DENY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.LICENSE_QUOTA_CORRUPTED">
+<span class="sig-name descname"><span class="pre">LICENSE_QUOTA_CORRUPTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.LICENSE_QUOTA_CORRUPTED:</span> <span class="pre">32&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.LICENSE_QUOTA_CORRUPTED" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.LICENSE_UNINITIALIZED">
+<span class="sig-name descname"><span class="pre">LICENSE_UNINITIALIZED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.LICENSE_UNINITIALIZED:</span> <span class="pre">26&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.LICENSE_UNINITIALIZED" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.LICENSE_UNSUPPORTED_API">
+<span class="sig-name descname"><span class="pre">LICENSE_UNSUPPORTED_API</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.LICENSE_UNSUPPORTED_API:</span> <span class="pre">92&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.LICENSE_UNSUPPORTED_API" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.LICENSE_UNSUPPORTED_DEVICE">
+<span class="sig-name descname"><span class="pre">LICENSE_UNSUPPORTED_DEVICE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.LICENSE_UNSUPPORTED_DEVICE:</span> <span class="pre">24&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.LICENSE_UNSUPPORTED_DEVICE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.LICENSE_UNSUPPORTED_ID">
+<span class="sig-name descname"><span class="pre">LICENSE_UNSUPPORTED_ID</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.LICENSE_UNSUPPORTED_ID:</span> <span class="pre">23&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.LICENSE_UNSUPPORTED_ID" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.LICENSE_UNSUPPORTED_PLATFORM">
+<span class="sig-name descname"><span class="pre">LICENSE_UNSUPPORTED_PLATFORM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.LICENSE_UNSUPPORTED_PLATFORM:</span> <span class="pre">22&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.LICENSE_UNSUPPORTED_PLATFORM" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.MISSING_ARG">
+<span class="sig-name descname"><span class="pre">MISSING_ARG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.MISSING_ARG:</span> <span class="pre">91&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.MISSING_ARG" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.MODEL_FORMAT_UNSUPPORTED">
+<span class="sig-name descname"><span class="pre">MODEL_FORMAT_UNSUPPORTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.MODEL_FORMAT_UNSUPPORTED:</span> <span class="pre">84&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.MODEL_FORMAT_UNSUPPORTED" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.MODEL_FUNCTION_UNSUPPORTED">
+<span class="sig-name descname"><span class="pre">MODEL_FUNCTION_UNSUPPORTED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.MODEL_FUNCTION_UNSUPPORTED:</span> <span class="pre">83&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.MODEL_FUNCTION_UNSUPPORTED" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.MODEL_SDK_MISMATCH">
+<span class="sig-name descname"><span class="pre">MODEL_SDK_MISMATCH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.MODEL_SDK_MISMATCH:</span> <span class="pre">85&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.MODEL_SDK_MISMATCH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.NO_TABLE_ERROR">
+<span class="sig-name descname"><span class="pre">NO_TABLE_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.NO_TABLE_ERROR:</span> <span class="pre">40&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.NO_TABLE_ERROR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.OCR_FAILURE">
+<span class="sig-name descname"><span class="pre">OCR_FAILURE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.OCR_FAILURE:</span> <span class="pre">41&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.OCR_FAILURE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.OUT_OF_MEMORY">
+<span class="sig-name descname"><span class="pre">OUT_OF_MEMORY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.OUT_OF_MEMORY:</span> <span class="pre">7&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.OUT_OF_MEMORY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.PDF_FORMAT_ERROR">
+<span class="sig-name descname"><span class="pre">PDF_FORMAT_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.PDF_FORMAT_ERROR:</span> <span class="pre">5&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.PDF_FORMAT_ERROR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.PDF_PAGE_ERROR">
+<span class="sig-name descname"><span class="pre">PDF_PAGE_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.PDF_PAGE_ERROR:</span> <span class="pre">4&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.PDF_PAGE_ERROR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.PDF_PASSWORD_ERROR">
+<span class="sig-name descname"><span class="pre">PDF_PASSWORD_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.PDF_PASSWORD_ERROR:</span> <span class="pre">3&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.PDF_PASSWORD_ERROR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.PDF_SECURITY_ERROR">
+<span class="sig-name descname"><span class="pre">PDF_SECURITY_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.PDF_SECURITY_ERROR:</span> <span class="pre">6&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.PDF_SECURITY_ERROR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.SUCCESS">
+<span class="sig-name descname"><span class="pre">SUCCESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.SUCCESS:</span> <span class="pre">0&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.SUCCESS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.UNKNOWN_ERROR">
+<span class="sig-name descname"><span class="pre">UNKNOWN_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.UNKNOWN_ERROR:</span> <span class="pre">100&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.UNKNOWN_ERROR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#PDFSolidConversion.ErrorCode.name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.value">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">value</span></span><a class="headerlink" href="#PDFSolidConversion.ErrorCode.value" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="PDFSolidConversion.ConvertCallback.html" class="btn btn-neutral float-left" title="PDFSolidConversion.ConvertCallback" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="PDFSolidConversion.ImageColorMode.html" class="btn btn-neutral float-right" title="PDFSolidConversion.ImageColorMode" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, PDF Technologies, Inc.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

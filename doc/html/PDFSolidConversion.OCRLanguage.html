@@ -1,0 +1,252 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDFSolidConversion.OCRLanguage &mdash; ComPDF Conversion 4.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=42d1b3bd"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PDFSolidConversion.OCROption" href="PDFSolidConversion.OCROption.html" />
+    <link rel="prev" title="PDFSolidConversion.LibraryManager" href="PDFSolidConversion.LibraryManager.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            ComPDF Conversion
+              <img src="_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Modules</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="PDFSolidConversion.html">PDFSolidConversion Module</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertOptions.html">PDFSolidConversion.ConvertOptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.CPDFConversion.html">PDFSolidConversion.CPDFConversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ConvertCallback.html">PDFSolidConversion.ConvertCallback</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html">PDFSolidConversion.ErrorCode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageColorMode.html">PDFSolidConversion.ImageColorMode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ExcelWorksheetOption.html">PDFSolidConversion.ExcelWorksheetOption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.HtmlOption.html">PDFSolidConversion.HtmlOption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html">PDFSolidConversion.ImageType</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html">PDFSolidConversion.LibraryManager</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">PDFSolidConversion.OCRLanguage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#PDFSolidConversion.OCRLanguage"><code class="docutils literal notranslate"><span class="pre">OCRLanguage</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCROption.html">PDFSolidConversion.OCROption</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.PageLayoutMode.html">PDFSolidConversion.PageLayoutMode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ComPDF Conversion</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Modules</a></li>
+          <li class="breadcrumb-item"><a href="PDFSolidConversion.html">PDFSolidConversion Module</a></li>
+      <li class="breadcrumb-item active">PDFSolidConversion.OCRLanguage</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/PDFSolidConversion.OCRLanguage.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pdfsolidconversion-ocrlanguage">
+<h1>PDFSolidConversion.OCRLanguage<a class="headerlink" href="#pdfsolidconversion-ocrlanguage" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">PDFSolidConversion.</span></span><span class="sig-name descname"><span class="pre">OCRLanguage</span></span><a class="headerlink" href="#PDFSolidConversion.OCRLanguage" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pybind11_object</span></code></p>
+<p>Members:</p>
+<p>UNKNOWN : Unknown language</p>
+<p>CHINESE : Chinese (Simplified)</p>
+<p>CHINESE_TRA : Chinese (Traditional)</p>
+<p>ENGLISH : English</p>
+<p>KOREAN : Korean</p>
+<p>JAPANESE : Japanese</p>
+<p>LATIN : Latin</p>
+<p>DEVANAGARI : Devanagari</p>
+<p>CYRILLIC : Cyrillic</p>
+<p>ARABIC : Arabic</p>
+<p>TAMIL : Tamil</p>
+<p>TELUGU : Telugu</p>
+<p>KANNADA : Kannada</p>
+<p>THAI : Thai</p>
+<p>GREEK : Greek</p>
+<p>ESLAV : Eslav</p>
+<p>AUTO : Automatically select language</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.ARABIC">
+<span class="sig-name descname"><span class="pre">ARABIC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.ARABIC:</span> <span class="pre">9&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.ARABIC" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.AUTO">
+<span class="sig-name descname"><span class="pre">AUTO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.AUTO:</span> <span class="pre">16&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.AUTO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.CHINESE">
+<span class="sig-name descname"><span class="pre">CHINESE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.CHINESE:</span> <span class="pre">1&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.CHINESE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.CHINESE_TRA">
+<span class="sig-name descname"><span class="pre">CHINESE_TRA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.CHINESE_TRA:</span> <span class="pre">2&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.CHINESE_TRA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.CYRILLIC">
+<span class="sig-name descname"><span class="pre">CYRILLIC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.CYRILLIC:</span> <span class="pre">8&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.CYRILLIC" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.DEVANAGARI">
+<span class="sig-name descname"><span class="pre">DEVANAGARI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.DEVANAGARI:</span> <span class="pre">7&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.DEVANAGARI" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.ENGLISH">
+<span class="sig-name descname"><span class="pre">ENGLISH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.ENGLISH:</span> <span class="pre">3&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.ENGLISH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.ESLAV">
+<span class="sig-name descname"><span class="pre">ESLAV</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.ESLAV:</span> <span class="pre">15&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.ESLAV" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.GREEK">
+<span class="sig-name descname"><span class="pre">GREEK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.GREEK:</span> <span class="pre">14&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.GREEK" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.JAPANESE">
+<span class="sig-name descname"><span class="pre">JAPANESE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.JAPANESE:</span> <span class="pre">5&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.JAPANESE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.KANNADA">
+<span class="sig-name descname"><span class="pre">KANNADA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.KANNADA:</span> <span class="pre">12&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.KANNADA" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.KOREAN">
+<span class="sig-name descname"><span class="pre">KOREAN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.KOREAN:</span> <span class="pre">4&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.KOREAN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.LATIN">
+<span class="sig-name descname"><span class="pre">LATIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.LATIN:</span> <span class="pre">6&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.LATIN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.TAMIL">
+<span class="sig-name descname"><span class="pre">TAMIL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.TAMIL:</span> <span class="pre">10&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.TAMIL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.TELUGU">
+<span class="sig-name descname"><span class="pre">TELUGU</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.TELUGU:</span> <span class="pre">11&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.TELUGU" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.THAI">
+<span class="sig-name descname"><span class="pre">THAI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.THAI:</span> <span class="pre">13&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.THAI" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.UNKNOWN">
+<span class="sig-name descname"><span class="pre">UNKNOWN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;OCRLanguage.UNKNOWN:</span> <span class="pre">0&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.UNKNOWN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.name" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="PDFSolidConversion.OCRLanguage.value">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">value</span></span><a class="headerlink" href="#PDFSolidConversion.OCRLanguage.value" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="PDFSolidConversion.LibraryManager.html" class="btn btn-neutral float-left" title="PDFSolidConversion.LibraryManager" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="PDFSolidConversion.OCROption.html" class="btn btn-neutral float-right" title="PDFSolidConversion.OCROption" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, PDF Technologies, Inc.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
