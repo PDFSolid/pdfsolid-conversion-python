@@ -37,6 +37,16 @@ PDFSolidConversion.ConvertOptions
 
       Whether to enable AI table recognition during conversion.
 
+   .. py:property:: enable_document_dewarp
+      :type: bool
+
+      Whether to apply DocumentAI dewarp before OCR image recognition.
+
+   .. py:property:: enable_document_orientation_classification
+      :type: bool
+
+      Whether to classify and correct document orientation before OCR image recognition.
+
    .. py:property:: enable_ocr
       :type: bool
 
