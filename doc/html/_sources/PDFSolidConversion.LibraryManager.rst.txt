@@ -11,17 +11,21 @@ PDFSolidConversion.LibraryManager
 
       Verifies the provided license key with the device ID and application ID.
 
+   .. py:staticmethod:: get_license_type() -> LicenseType
+
+      Returns the type of the currently verified license without verifying again or consuming quota. Returns ``LicenseType.UNKNOWN`` before verification, after failed verification, or while the SDK is releasing.
+
    .. py:staticmethod:: initialize(resource_path: str) -> None
 
       Initializes the SDK library with the given resource path.
 
    .. py:staticmethod:: release() -> None
 
-      Releases all resources used by the library. Call this when the SDK is no longer needed.
+      Releases all resources used by the library. Call this when the SDK is no longer needed. Active conversions finish first, and new work is refused while the release is pending.
 
    .. py:staticmethod:: release_document_ai_model() -> None
 
-      Releases the loaded SDK-managed DocumentAI model.
+      Releases the loaded SDK-managed DocumentAI model. Cleanup is deferred until active conversions return. Call ``set_document_ai_model`` again before using AI functions.
 
    .. py:staticmethod:: set_logger(enable_info: bool, enable_warning: bool) -> None
 
@@ -33,7 +37,7 @@ PDFSolidConversion.LibraryManager
 
    .. py:staticmethod:: get_page_count(file_path: str, password: str) -> int
 
-      Returns the number of pages in a document.
+      Returns the number of pages in a document. Returns -1 while library resources are being released or configured.
 
    .. py:staticmethod:: get_remaining_page_quota() -> int
 
@@ -41,7 +45,7 @@ PDFSolidConversion.LibraryManager
 
    .. py:staticmethod:: set_document_ai_model(file_path: str, gpu_id: int = -1) -> ErrorCode
 
-      Loads the SDK-managed DocumentAI model used by OCR, layout analysis, and table recognition. ``gpu_id`` selects the GPU for the model; -1 disables GPU use.
+      Loads the DocumentAI components contained in the given model package (used by OCR, layout analysis, and table recognition) and merges them with the components already loaded. ``gpu_id`` selects the GPU for the model; -1 disables GPU use.
 
    .. py:staticmethod:: set_document_ai_model_count(layout_model_count: int, table_model_count: int) -> None
 

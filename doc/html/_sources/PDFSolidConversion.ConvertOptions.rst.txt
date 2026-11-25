@@ -27,6 +27,16 @@ PDFSolidConversion.ConvertOptions
 
       Whether to contain page background images when converting, which takes effect only when ``enable_ocr`` is true.
 
+   .. py:property:: custom_page_height
+      :type: float
+
+      Output page height in points for image input.
+
+   .. py:property:: custom_page_width
+      :type: float
+
+      Output page width in points for image input; set with custom_page_height to choose the page outright.
+
    .. py:property:: enable_ai_layout
       :type: bool
 
@@ -36,6 +46,11 @@ PDFSolidConversion.ConvertOptions
       :type: bool
 
       Whether to enable AI table recognition during conversion.
+
+   .. py:property:: enable_auto_page_size
+      :type: bool
+
+      Whether to size the output page from the image's own resolution, matching it to the nearest standard paper. Only takes effect when the input is an image file.
 
    .. py:property:: enable_document_dewarp
       :type: bool
@@ -132,6 +147,11 @@ PDFSolidConversion.ConvertOptions
 
       Specifies the pages to convert, for example ``1-3,5,7-9``.
 
+   .. py:property:: table_recognition_accuracy
+      :type: TableRecognitionAccuracy
+
+      DocumentAI table recognition accuracy.
+
    .. py:property:: transparent_text
       :type: bool
 
@@ -141,3 +161,8 @@ PDFSolidConversion.ConvertOptions
       :type: bool
 
       Whether to format tables when converting PDF to TXT.
+
+   .. py:property:: word_pdf_bookmark_mode
+      :type: WordPdfBookmarkMode
+
+      How the PDF bookmarks are generated. Only takes effect for Word to PDF.

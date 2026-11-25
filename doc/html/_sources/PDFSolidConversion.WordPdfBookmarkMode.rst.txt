@@ -1,0 +1,7 @@
+PDFSolidConversion.WordPdfBookmarkMode
+=======================================
+
+.. autoclass:: PDFSolidConversion.WordPdfBookmarkMode
+   :members:
+   :undoc-members:
+   :show-inheritance:

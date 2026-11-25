@@ -13,6 +13,9 @@ PDFSolidConversion Module
    PDFSolidConversion.HtmlOption
    PDFSolidConversion.ImageType
    PDFSolidConversion.LibraryManager
+   PDFSolidConversion.LicenseType
    PDFSolidConversion.OCRLanguage
    PDFSolidConversion.OCROption
    PDFSolidConversion.PageLayoutMode
+   PDFSolidConversion.TableRecognitionAccuracy
+   PDFSolidConversion.WordPdfBookmarkMode

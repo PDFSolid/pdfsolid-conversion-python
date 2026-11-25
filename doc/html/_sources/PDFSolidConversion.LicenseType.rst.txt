@@ -1,0 +1,7 @@
+PDFSolidConversion.LicenseType
+===============================
+
+.. autoclass:: PDFSolidConversion.LicenseType
+   :members:
+   :undoc-members:
+   :show-inheritance:

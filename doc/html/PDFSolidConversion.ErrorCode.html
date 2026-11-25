@@ -6,14 +6,14 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PDFSolidConversion.ErrorCode &mdash; Conversion 1.2.0 documentation</title>
+  <title>PDFSolidConversion.ErrorCode &mdash; Conversion 1.3.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=6efca38a"></script>
+      <script src="_static/documentation_options.js?v=1f29e9d3"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
@@ -59,9 +59,12 @@
 <li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.HtmlOption.html">PDFSolidConversion.HtmlOption</a></li>
 <li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.ImageType.html">PDFSolidConversion.ImageType</a></li>
 <li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LibraryManager.html">PDFSolidConversion.LibraryManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LicenseType.html">PDFSolidConversion.LicenseType</a></li>
 <li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html">PDFSolidConversion.OCRLanguage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCROption.html">PDFSolidConversion.OCROption</a></li>
 <li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.PageLayoutMode.html">PDFSolidConversion.PageLayoutMode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.TableRecognitionAccuracy.html">PDFSolidConversion.TableRecognitionAccuracy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.WordPdfBookmarkMode.html">PDFSolidConversion.WordPdfBookmarkMode</a></li>
 </ul>
 </li>
 </ul>
@@ -142,6 +145,7 @@
 <p>LICENSE_UNSUPPORTED_API : The current license does not support calling this API</p>
 <p>LICENSE_MISMATCH : The license does not match the device, module, or version</p>
 <p>INVALID_TABLE : The table data is invalid or null</p>
+<p>UNSUPPORTED_FEATURE : The source document uses a feature this SDK cannot fully reproduce, or the requested output cannot carry the input’s content; a usable output may still have been written</p>
 <p>UNKNOWN_ERROR : Unknown error</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.CANCEL">
@@ -351,6 +355,11 @@
 <dl class="py attribute">
 <dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.UNKNOWN_ERROR">
 <span class="sig-name descname"><span class="pre">UNKNOWN_ERROR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.UNKNOWN_ERROR:</span> <span class="pre">100&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.UNKNOWN_ERROR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="PDFSolidConversion.ErrorCode.UNSUPPORTED_FEATURE">
+<span class="sig-name descname"><span class="pre">UNSUPPORTED_FEATURE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;ErrorCode.UNSUPPORTED_FEATURE:</span> <span class="pre">95&gt;</span></em><a class="headerlink" href="#PDFSolidConversion.ErrorCode.UNSUPPORTED_FEATURE" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py property">

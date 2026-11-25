@@ -1,10 +1,11 @@
 # PDFSolid Conversion SDK for Python
 
-High-performance Python SDK for converting PDF to Word, Excel, PowerPoint, HTML, Image, TXT, RTF, CSV, JSON, Markdown, Searchable PDF, and OFD with AI-powered OCR, layout analysis, and table recognition.
+High-performance Python SDK for converting PDF to Word, Excel, PowerPoint, HTML, Image, TXT, RTF, CSV, JSON, Markdown, Searchable PDF, and OFD with AI-powered OCR, layout analysis, and table recognition. SDK v1.3.0 also converts Word documents (`.docx`) to PDF.
 
 ## Features
 
 - **PDF to Word** (.docx) — Flow and Box layout modes
+- **Word to PDF** (.docx → .pdf) — optional page ranges and PDF bookmarks
 - **PDF to Excel** (.xlsx) — per-table, per-page, or per-document worksheet options
 - **PDF to PowerPoint** (.pptx)
 - **PDF to HTML** (.html) — single/multi-page with optional bookmark navigation
@@ -28,11 +29,13 @@ High-performance Python SDK for converting PDF to Word, Excel, PowerPoint, HTML,
 
 | Platform | System Requirements | Development Environment |
 | -------- | ------------------- | ----------------------- |
-| Windows | Windows 7, 8, 10, 11 (64-bit) | Python 3.10+ |
-| Linux | Linux x64, GLIBC 2.31+ | Python 3.10+ |
-| macOS | macOS 10.14+ (Intel, Apple Silicon) | Python 3.10+ |
+| Windows | Windows x64 (use a Windows version supported by your CPython build) | CPython 3.8–3.14 |
+| Linux | Linux x64, GLIBC 2.31+ | CPython 3.10–3.14 |
+| macOS | macOS 11.0+ (Intel x86_64, Apple Silicon arm64) | CPython 3.10–3.14 |
 
 ## Quick Start
+
+Install the matching 1.3.0 `pdfsolidconversion` wheel from the SDK distribution; this repository does not contain wheels. The examples use `PDFSolidConversion` (Windows and macOS wheels). For the Linux x86_64 wheels, replace that import name with `PdfSolidConversion` (case-sensitive).
 
 ### 1. Get a License
 
@@ -64,6 +67,19 @@ LibraryManager.release()
 ```
 
 ## Conversion Examples
+
+### Word (DOCX) to PDF
+
+After applying the license and initializing the SDK, pass the input `.docx` path and a writable output `.pdf` path.
+
+```python
+# On Linux, import from PdfSolidConversion instead.
+from PDFSolidConversion import CPDFConversion
+
+status = CPDFConversion.start_word_to_pdf("input.docx", "output.pdf")
+```
+
+The default converts all pages without PDF bookmarks. On an optional `ConvertOptions` passed as the third argument, set `page_ranges` to select pages (for example, `1-2`) and `word_pdf_bookmark_mode` to generate bookmarks from headings or Word bookmarks. Check the returned status before using the PDF. `ErrorCode.UNSUPPORTED_FEATURE` means the input contains features that may affect fidelity; a PDF may still have been written.
 
 ### PDF to Excel
 

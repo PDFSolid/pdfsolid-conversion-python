@@ -1,0 +1,7 @@
+PDFSolidConversion.TableRecognitionAccuracy
+============================================
+
+.. autoclass:: PDFSolidConversion.TableRecognitionAccuracy
+   :members:
+   :undoc-members:
+   :show-inheritance:

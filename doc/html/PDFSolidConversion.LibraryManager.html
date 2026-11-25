@@ -6,20 +6,20 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PDFSolidConversion.LibraryManager &mdash; Conversion 1.2.0 documentation</title>
+  <title>PDFSolidConversion.LibraryManager &mdash; Conversion 1.3.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=6efca38a"></script>
+      <script src="_static/documentation_options.js?v=1f29e9d3"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="PDFSolidConversion.OCRLanguage" href="PDFSolidConversion.OCRLanguage.html" />
+    <link rel="next" title="PDFSolidConversion.LicenseType" href="PDFSolidConversion.LicenseType.html" />
     <link rel="prev" title="PDFSolidConversion.ImageType" href="PDFSolidConversion.ImageType.html" /> 
 </head>
 
@@ -59,9 +59,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#PDFSolidConversion.LibraryManager"><code class="docutils literal notranslate"><span class="pre">LibraryManager</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.LicenseType.html">PDFSolidConversion.LicenseType</a></li>
 <li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCRLanguage.html">PDFSolidConversion.OCRLanguage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.OCROption.html">PDFSolidConversion.OCROption</a></li>
 <li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.PageLayoutMode.html">PDFSolidConversion.PageLayoutMode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.TableRecognitionAccuracy.html">PDFSolidConversion.TableRecognitionAccuracy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PDFSolidConversion.WordPdfBookmarkMode.html">PDFSolidConversion.WordPdfBookmarkMode</a></li>
 </ul>
 </li>
 </ul>
@@ -107,6 +110,12 @@
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="PDFSolidConversion.LibraryManager.get_license_type">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_license_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="PDFSolidConversion.LicenseType.html#PDFSolidConversion.LicenseType" title="PDFSolidConversion.LicenseType"><span class="pre">LicenseType</span></a></span></span><a class="headerlink" href="#PDFSolidConversion.LibraryManager.get_license_type" title="Link to this definition"></a></dt>
+<dd><p>Returns the type of the currently verified license without verifying again or consuming quota. Returns <code class="docutils literal notranslate"><span class="pre">LicenseType.UNKNOWN</span></code> before verification, after failed verification, or while the SDK is releasing.</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="PDFSolidConversion.LibraryManager.initialize">
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">initialize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resource_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#PDFSolidConversion.LibraryManager.initialize" title="Link to this definition"></a></dt>
 <dd><p>Initializes the SDK library with the given resource path.</p>
@@ -115,13 +124,13 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="PDFSolidConversion.LibraryManager.release">
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">release</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#PDFSolidConversion.LibraryManager.release" title="Link to this definition"></a></dt>
-<dd><p>Releases all resources used by the library. Call this when the SDK is no longer needed.</p>
+<dd><p>Releases all resources used by the library. Call this when the SDK is no longer needed. Active conversions finish first, and new work is refused while the release is pending.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="PDFSolidConversion.LibraryManager.release_document_ai_model">
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">release_document_ai_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#PDFSolidConversion.LibraryManager.release_document_ai_model" title="Link to this definition"></a></dt>
-<dd><p>Releases the loaded SDK-managed DocumentAI model.</p>
+<dd><p>Releases the loaded SDK-managed DocumentAI model. Cleanup is deferred until active conversions return. Call <code class="docutils literal notranslate"><span class="pre">set_document_ai_model</span></code> again before using AI functions.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -139,7 +148,7 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="PDFSolidConversion.LibraryManager.get_page_count">
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_page_count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#PDFSolidConversion.LibraryManager.get_page_count" title="Link to this definition"></a></dt>
-<dd><p>Returns the number of pages in a document.</p>
+<dd><p>Returns the number of pages in a document. Returns -1 while library resources are being released or configured.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -151,7 +160,7 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="PDFSolidConversion.LibraryManager.set_document_ai_model">
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">set_document_ai_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gpu_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="PDFSolidConversion.ErrorCode.html#PDFSolidConversion.ErrorCode" title="PDFSolidConversion.ErrorCode"><span class="pre">ErrorCode</span></a></span></span><a class="headerlink" href="#PDFSolidConversion.LibraryManager.set_document_ai_model" title="Link to this definition"></a></dt>
-<dd><p>Loads the SDK-managed DocumentAI model used by OCR, layout analysis, and table recognition. <code class="docutils literal notranslate"><span class="pre">gpu_id</span></code> selects the GPU for the model; -1 disables GPU use.</p>
+<dd><p>Loads the DocumentAI components contained in the given model package (used by OCR, layout analysis, and table recognition) and merges them with the components already loaded. <code class="docutils literal notranslate"><span class="pre">gpu_id</span></code> selects the GPU for the model; -1 disables GPU use.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -169,7 +178,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="PDFSolidConversion.ImageType.html" class="btn btn-neutral float-left" title="PDFSolidConversion.ImageType" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="PDFSolidConversion.OCRLanguage.html" class="btn btn-neutral float-right" title="PDFSolidConversion.OCRLanguage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="PDFSolidConversion.LicenseType.html" class="btn btn-neutral float-right" title="PDFSolidConversion.LicenseType" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
